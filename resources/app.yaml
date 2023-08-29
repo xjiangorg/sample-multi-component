@@ -1,0 +1,7 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: Application
+metadata:
+  name: application-sample
+spec:
+  description: Simple app that consists from two components from the same git repository
+  displayName: test-git-multi-component

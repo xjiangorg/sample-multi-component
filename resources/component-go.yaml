@@ -1,0 +1,14 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: Component
+metadata:
+  name: go-component-sample
+  annotations:
+    build.appstudio.openshift.io/request: "configure-pac"
+    image.redhat.com/generate: '{"visibility": "public"}'
+spec:
+  componentName: go-sample-component-name
+  application: application-sample
+  source:
+    git:
+      url: https://github.com/mmorhun/sample-multi-component
+      context: go-component
